@@ -46,7 +46,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: nginx-test
-  namespace: caddy-system
+  namespace: nginx-test
   annotations:
     kubernetes.io/ingress.class: caddy
 spec:
