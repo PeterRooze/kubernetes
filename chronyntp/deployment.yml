@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: chrony-alpine
   # allow for override: kubectl -n <ns> apply ...
-  #namespace: default
+  namespace: chrony
 spec:
   selector:
     matchLabels:

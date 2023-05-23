@@ -1,7 +1,9 @@
 apiVersion: v1
 kind: ConfigMap
+
 metadata:
   name: chrony-configmap
+  namespace: chrony
 data:
   chrony.conf: |
     # from configmap
