@@ -1,0 +1,17 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: chrony-alpine-service
+  namespace: default
+  labels:
+    app: chrony-alpine
+spec:
+  ports:
+  - port: 123
+    name: ntp
+    targetPort: 123
+    protocol: UDP
+  selector:
+    app: chrony-alpine
+  type: LoadBalancer
