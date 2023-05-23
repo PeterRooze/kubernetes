@@ -55,7 +55,7 @@ metadata:
     kubernetes.io/ingress.class: caddy
 spec:
   rules:
-  - host: nginx-test.dommehut.xyz
+  - host: dommehut.xyz
     http:
       paths:
       - path: /
